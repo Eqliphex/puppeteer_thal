@@ -62,5 +62,5 @@ typings/
 .idea
 
 #misc
-node_modules
+node_modules/
 creds.js
