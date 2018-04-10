@@ -60,3 +60,7 @@ typings/
 # .idea
 .DS_Store
 .idea
+
+#misc
+node_modules
+creds.js
