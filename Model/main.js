@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const CREDS = require('../creds');
 
 async function run() {
-    // dom element selectors
+    // DOM element selectors
     const USERNAME_SELECTOR = '#login_field';
     const PASSWORD_SELECTOR = '#password';
     const BUTTON_SELECTOR = '#login > form > div.auth-form-body.mt-3 > input.btn.btn-primary.btn-block';
@@ -10,7 +10,7 @@ async function run() {
     const LIST_EMAIL_SELECTOR = '#user_search_results > div.user-list > div:nth-child(INDEX) > div.d-flex > div > ul > li:nth-child(2) > a';
     const LENGTH_SELECTOR_CLASS = 'user-list-item';
 
-    // Initilization:
+    // Initialization:
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto('https://github.com/login');
